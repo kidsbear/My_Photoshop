@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1848</width>
+    <height>890</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menu_bar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1848</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="load_ref_action"/>
+    <addaction name="save_canvas_action"/>
+   </widget>
+   <widget class="QMenu" name="menu_edit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="clear_canvas_action"/>
+    <addaction name="copy_ref_action"/>
+   </widget>
+   <widget class="QMenu" name="menu_brushes">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Brushes</string>
+    </property>
+    <addaction name="select_brush_action"/>
+   </widget>
+   <widget class="QMenu" name="menu_filter">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Filter</string>
+    </property>
+    <addaction name="filter_kernel_action"/>
+    <addaction name="gaussian_blur_action"/>
+    <addaction name="bilat_mean_action"/>
+    <addaction name="bilat_gauss_action"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_edit"/>
+   <addaction name="menu_brushes"/>
+   <addaction name="menu_filter"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="load_ref_action">
+   <property name="text">
+    <string>Load Reference Image</string>
+   </property>
+  </action>
+  <action name="save_canvas_action">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Save Canvas</string>
+   </property>
+  </action>
+  <action name="clear_canvas_action">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Clear Canvas</string>
+   </property>
+  </action>
+  <action name="copy_ref_action">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Copy Reference</string>
+   </property>
+  </action>
+  <action name="filter_kernel_action">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Filter Kernel</string>
+   </property>
+  </action>
+  <action name="bilat_mean_action">
+   <property name="text">
+    <string>Bilateral Mean</string>
+   </property>
+  </action>
+  <action name="bilat_gauss_action">
+   <property name="text">
+    <string>Bilaterial Gaussian</string>
+   </property>
+  </action>
+  <action name="select_brush_action">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Select Brush ...</string>
+   </property>
+  </action>
+  <action name="gaussian_blur_action">
+   <property name="text">
+    <string>Gaussian Blur</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
